@@ -1,0 +1,18 @@
+<package>
+  <name>sphero_ctrl</name>
+  <version>0.1.2</version>
+  <description>
+    sphero_ctrl provides a controller for moving a Sphero to a target position.
+  </description>
+  <author>Daqing Yi</author>
+  <maintainer email="daqing.yi@byu.edu">Daqing Yi</maintainer>
+  <license>BSD</license>
+  <url>http://ros.org/wiki/sphero_ctrl</url>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>geometry_msgs</build_depend>
+ 
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+</package>

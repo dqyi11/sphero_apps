@@ -1,0 +1,17 @@
+<launch>
+
+  <include file="$(find colorblob_tracker)/launch/launch_sphero_color_blob_tracker.launch">
+  </include>
+
+  <include file="$(find sphero_dashboard)/launch/sphero_dashboard.launch">
+  </include>
+
+  <rosparam command="load" file="$(find sphero_ctrl)/launch/param/gains.yaml" />
+  <node pkg="sphero_ctrl" type="sphero_ctrl.py" name="sphero_ctrl" output="screen">
+    <!--
+    <remap from="tracked_pos" to="sphero_pos" />
+    <remap from="target_pos" to="sphero_target_pos" />
+    -->
+  </node>
+
+</launch>
