@@ -247,6 +247,7 @@ class SpheroDashboardForm(QtGui.QMainWindow):
     def __init__(self):
         super(QtGui.QMainWindow, self).__init__()
         self.resize(600, 480) 
+        self.initUI()
 
         rospy.init_node('sphero_dashboard', anonymous=True)
         self.cmdVelPub = rospy.Publisher('cmd_vel', Twist, queue_size=1)
@@ -267,7 +268,6 @@ class SpheroDashboardForm(QtGui.QMainWindow):
         self.setLEDColor(self.ledRVal, self.ledGVal, self.ledBVal)
         self.setBackLED(self.backLEDVal)
         
-        self.initUI()
        
         
     def initUI(self):
