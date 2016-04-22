@@ -1,3 +1,0 @@
-<launch>
-  <node pkg="sphero_dashboard" type="sphero_dashboard.py" name="sphero_dashboard"/>
-</launch>
